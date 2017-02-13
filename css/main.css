@@ -1,0 +1,266 @@
+
+
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
+/* fonts */
+@font-face {
+ font-family:oswald-light;
+ src: url('../fonts/Oswald-Light.ttf');
+}
+@font-face {
+ font-family:oswald-bold;
+ src: url('../fonts/Oswald-Bold.ttf');
+}
+@font-face {
+ font-family: oswald-extralight;
+ src: url('../fonts/Oswald-ExtraLight.ttf');
+}
+@font-face {
+ font-family: Oswald-Regular;
+ src: url('../fonts/Oswald-Regular.ttf');
+}
+@font-face {
+ font-family: Oswald-italic;
+ src: url('../fonts/Oswald-italic.ttf');
+}
+@font-face {
+ font-family:opensans-regular;
+ src: url('../fonts/OpenSans-Regular.otf');
+}
+@font-face {
+ font-family:OpenSans-Bold;
+ src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+ font-family:OpenSans-light;
+ src: url('../fonts/OpenSans-Light.ttf');
+}
+*{
+    margin:0px;
+    padding: 0px;
+}
+.section-padding{
+    padding-top: 30px;
+}
+/* header css */
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family:opensans-regular;
+	font-weight: 500;
+}
+img{
+    object-fit: cover;
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6,li{
+	font-family:oswald-regular;
+	font-weight: 500;
+}
+header nav ul.menu-1 li {
+    display: inline-block;
+    color: rgba(34, 34, 34, 0.74);
+    margin: 0px 14px;
+}
+.no-gutter{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.h1 {
+    font-family: oswald-bold;
+    letter-spacing: 3px;
+    font-size: 38px;
+    margin-bottom: 21px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+p.title{
+    font-size: 14px;
+    color: #7d7d7d;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+}
+header nav ul.menu-1 {
+    margin-top: 10px;
+}
+header nav a.navbar-brand {
+    font-size: 33px;
+    color: #222;
+    text-transform: lowercase;
+    font-weight: 900;
+    font-family: Oswald-bold;
+}   
+header nav.navbar.navbar-fixed-top {
+    background-color: #fff;
+}
+.padding-top-20{
+    padding-top:20px !important;
+}
+/* header css end*/
+.button{
+    color: #ffffff;
+    background: #dc9916;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 46px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+.button:hover {
+    color: #ffffff;
+    background: #2d2d2d;
+}
+/* banner css */
+.index .banner ul{list-style: none outside none;
+    padding-left: 0;
+    margin: 0;
+}
+.index .banner{
+    max-height: 600px;
+    overflow: hidden;
+}
+.index .banner .item{
+    margin-bottom: 60px;
+}
+.index .banner .content-slider h3 {
+    margin: 0;
+    padding: 70px 0;
+}
+
+.index .banner ul.lSPager.lSpg {
+		display: none;
+}
+.index .banner .slider-image img {
+    width: 100%;
+    height: auto;
+}
+.index .banner li.lslide {
+    position: relative;
+}
+.index .banner .slider-content {
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(177, 177, 177, 0.22);
+}
+.index .banner .slider-content .content {
+    position: relative;
+    top:15%;
+}
+.index .banner .slider-content .content h1 {
+    font-size: 72px;
+    font-family: oswald-light;
+    letter-spacing: 14px;
+    line-height: 80px;
+    text-shadow: 0px 2px 0px #fff;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.index .banner .slider-content .content p{
+    line-height: 33px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 24px;
+    width: 100%;
+}
+.index .banner .slider-content .content a.button{
+    
+}
+
+/* banner css end */
+/* second scroll section css*/
+.content{
+    position: relative;
+}
+.image-box img {
+    min-height: 575px;
+    width: 100%;
+}
+.content-box{
+    position: absolute;
+    top: 0px;
+}
+.back-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.index .scroll-first{
+
+}
+.index .about-sec{
+
+}
+.content-box h3.h1 {
+    color: #dc9916;
+    font-family: oswald-bold;
+    letter-spacing: 3px;
+    font-size: 38px;
+    margin-bottom: 21px;
+}
+.content-box h3.h1 span {
+    color: #222;
+}
+.content-box h3.h1 span:hover {
+    color: #dc9916;
+}
+.index .about-sec .content-box p.title {
+    width: 60%;
+    margin: 26px 0px;
+}
+.overlay-box{
+    position: relative;
+}
+.hover-overlay{
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    padding: 100px 50px;
+    top: 0px;
+    display: none;
+    background-color:#000;
+    -webkit-transition: .7s ease-in;
+    -moz-transition:.7s ease-in;
+}
+.overlay-box:hover .hover-overlay{
+    display: inline-block;
+}
+.image-full-width img{
+    max-height:280px;
+    width: 100%;
+}
+.image-half-box img {
+    max-height: 280px;
+    width: 100%;
+}
+/*second scroll section end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
