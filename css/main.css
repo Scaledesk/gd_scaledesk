@@ -248,6 +248,15 @@ header nav.navbar.navbar-fixed-top {
     width: 100%;
 }
 /*second scroll section end*/
+/*footer css*/
+footer {
+    background: #000;
+    color: rgba(255, 255, 255, 0.54);
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+}
+/*footer css end*/
 
 
 
