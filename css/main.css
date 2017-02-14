@@ -26,7 +26,7 @@ Author's custom styles
 }
 @font-face {
  font-family:opensans-regular;
- src: url('../fonts/OpenSans-Regular.otf');
+ src: url('../fonts/OpenSans-Regular.ttf');
 }
 @font-face {
  font-family:OpenSans-Bold;
@@ -64,17 +64,31 @@ header nav ul.menu-1 li {
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
-.h1 {
-    font-family: oswald-bold;
+.title-head {
+    font-family: oswald-regular;
     letter-spacing: 3px;
     font-size: 38px;
     margin-bottom: 21px;
-    font-weight: 900;
+    font-weight: 600;
     text-transform: uppercase;
 }
-h3.h1 {
+.subtitle {
+    font-size: 23px;
+    text-transform: capitalize;
+    color: #5ea50c;
+    font-weight:100;
+    margin-bottom: 30px;
+}
+.subtitle-head {
+    font-size: 23px;
+    text-transform: capitalize;
+    color: #5ea50c;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h3.title-head {
     color: #dc9916;
-    font-family: oswald-bold;
+    font-family: oswald-regular;
     letter-spacing: 3px;
     font-size: 38px;
     margin-bottom: 21px;
@@ -85,26 +99,34 @@ a:hover,a:focus{
     text-decoration: none;
     cursor: pointer;
 }
-h3.h1 span {
+h3.title-head span {
     color: #222;
 }
-h3.h1 span:hover {
+h3.title-head span:hover {
     color: #dc9916;
 }
-p.text{
-
+p.text {
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 26px;
+    color: rgba(17, 17, 17, 0.67);
 }
 p.title {
     font-size: 15px;
     color: rgba(34, 34, 34, 0.66);
-    line-height: 2px;
+    line-height: 30px;
     letter-spacing: 0.25px;
-    font-weight: 600;
-    margin-top: 5px;
+    font-weight: 100;
 }
 header nav ul.menu-1 {
     margin-top: 15px;
     text-align: center;
+}
+header nav .navbar-brand > img {
+    display: block;
+    height: 50px;
+    margin-top: -12px;
+    margin-left: 17px;
 }
 header nav a.navbar-brand {
     font-size: 33px;
@@ -151,6 +173,9 @@ header nav .col-sm-3.text-right ul.menu-1 {
 .section-margin{
     margin-top: 20px;
 }
+.section-margin-50{
+    margin-top:50px;
+}
 .secondry-bg{
     background-color: #f8f8f8;
 }
@@ -158,7 +183,7 @@ header nav .col-sm-3.text-right ul.menu-1 {
     text-align: center;
 }
 .section-padding{
-    padding-top: 30px;
+    padding: 20px 0px !important;
 }
 .section-padding-50{
     padding-top: 50px;
@@ -174,9 +199,10 @@ header nav .col-sm-3.text-right ul.menu-1 {
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing:1px;
     margin-top: 20px;
     padding: 0 30px;
+    font-family: oswald-regular;
 }
 .button:hover {
     color: #ffffff;
@@ -198,7 +224,9 @@ header nav .col-sm-3.text-right ul.menu-1 {
     margin: 0;
     padding: 70px 0;
 }
-
+.index .banner .lSAction > a{
+    top:34%;
+}
 .index .banner ul.lSPager.lSpg {
 		display: none;
 }
@@ -256,7 +284,7 @@ header nav .col-sm-3.text-right ul.menu-1 {
     min-height: 575px;
     width: 100%;
 }
-.content-box{
+.index .content-box{
     position: absolute;
     top: 0px;
 }
@@ -310,15 +338,16 @@ header nav .col-sm-3.text-right ul.menu-1 {
 .card{
     position: relative;
 }
-.card .card-image {
+.card-image {
     position: inherit;
     opacity: 1;
     -webkit-filter: blur(0);
     filter: blur(0);
     height: auto;
     padding: 0;
+    border: 1px solid #ebebeb;
 }
-.card .card-image:before{
+.card-image:before{
     content: "";
     background: #000000;
     width: 100%;
@@ -339,9 +368,69 @@ header nav .col-sm-3.text-right ul.menu-1 {
     -ms-transition: opacity 0.5s;
     -webkit-transition: opacity 0.5s;
     -moz-transition: opacity 0.5s;
+    -transition: opacity 0.5s;
+}
+.card:hover .card-time{
+    color:#222;
 }
 .card .card-time{
     position: absolute;
+    z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.76);
+    color: rgba(255, 255, 255, 0.67);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.card {
+    text-align: center;
+    border: 0px solid #ebebeb;
+    border-bottom: 4px solid #ebebeb;
+}
+.product-sec li div.card{
+    margin: 0px 12px;
+    padding-bottom: 20px;
+    background: #fff;
+}
+.card .slider-image img{
+
+}
+.product-sec .lSAction > .lSPrev {
+    left: 5px;
+    background-color: #999;
+    border-radius: 50%;
+    background-position: 1px 0px;
+}
+.product-sec .lSAction > .lSNext {
+    right: 5px;
+    background-color: #999;
+    border-radius: 50%;
+    background-position: 30.7px 0px;
+}
+.product-sec ul.lSPager.lSGallery {
+    display: none;
+}
+.testomanial .card{
+    border: 0px;
+}
+.read-more-btn {
+    color: #dc9916;
+}
+.card .card-content {
+    background-color: #fff;
+    text-align: left;
+    border: 1px solid #ebebeb;
+    padding: 20px 15px;
+}
+.card a.title {
+    color: #222;
+    font-weight: 500;
+    font-size: 21px;
+    font-family: oswald-regular;
+    letter-spacing: .9px;
+    margin-bottom: 20px;
+    display: inline-block;
 }
 /* card css end*/
 /*footer css*/
@@ -377,14 +466,16 @@ footer p.title{
     font-size: 14px;
 }
 footer .News-letter p.text{
-    font-size: 15px;
+    font-size: 14px;
     color: #777777;
-    font-weight: 600;
+    font-weight: 100;
+    text-align: left;
 }
 footer .logo-footer p.text{
-    font-size: 15px;
+    font-size: 14px;
     color: #777777;
-    font-weight: 600;
+    font-weight: 100;
+    text-align: left;
 }
 footer input.input {
     width: 100%;
@@ -396,10 +487,16 @@ footer input.input {
 footer input:focus,footer input:hover{
     outline: 0;
 }
+footer p.title{
+    font-size: 15px;
+    color: rgba(34, 34, 34, 0.66);
+    line-height: 2px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    margin-top: 5px;
+}
 footer input.button {
     border: 0px;
-    border-radius: 0px;
-    padding: 0px 15px;
 }
 footer .logo-footer img {
     height: 107px;
@@ -414,7 +511,91 @@ footer .instgram-footer .footer-box .image-footer img {
 /*footer css end*/
 
 
-
+/*inner banner css start*/
+.inner section#banner {
+    background-color: #ebebeb;
+}
+.inner .banner .banner-content-box {
+    padding-top: 107px;
+}
+.inner .banner .banner-image-box .card-image img {
+    width: 100%;
+}
+.inner .banner .banner-image-box .card-image:before {
+    background: #059205;
+}
+.inner .banner .banner-image-box .lSAction > a {
+    display: none;
+}
+.inner .banner .banner-image-box ul.lSPager.lSGallery {
+    display: none;
+}
+.inner .banner .banner-image-box {
+}
+.inner .video-sec:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #427224;
+    opacity: .8;
+}
+.inner .video-sec {
+    padding: 0px;
+    position: relative;
+}
+.inner .feature-sec .feature-content .feature-box .col-xs-4.no-gutter.box {
+    text-align: center;
+    border: 1px solid rgba(153, 153, 153, 0.62);
+    padding: 20px 30px !important;
+}
+.inner #product-sec-inner.product-sec li div.card {
+    margin: 0px 12px;
+    padding-bottom: 20px;
+    background: #ebebeb;
+    border: 1px solid #ebebeb;
+    box-shadow: 0px 6px 1px 2px #ebebeb;
+}
+.feature-sec .feature-content .content-box {
+    padding-top: 42px;
+}
+.inner .feature-sec .feature-content .feature-box .col-xs-4.no-gutter.box:nth-child(n){
+    border-bottom: 0px;
+    overflow: hidden;
+    height: 230px;
+    padding-top: 60px !important;
+}
+.inner .feature-sec .feature-content .feature-box .col-xs-4.no-gutter.box:nth-child(1), .inner .feature-sec .feature-content .feature-box .col-xs-4.no-gutter.box:nth-child(2), .inner .feature-sec .feature-content .feature-box .col-xs-4.no-gutter.box:nth-child(3) {
+    border-top: 0px;
+}
+.inner .feature-sec .feature-content .feature-box .col-xs-4.no-gutter.box:nth-child(5), .inner .feature-sec .feature-content .feature-box .col-xs-4.no-gutter.box:nth-child(2){
+border-left: 0px;
+border-right: 0px;
+}
+.feature-sec .feature-content .content-box p.title{
+    text-align: left;
+}
+.feature-sec .feature-content .feature-box p.text {
+    line-height: 20px;
+    font-size: 12px;
+    position: relative;
+    bottom: -90px;
+    display: none;
+}
+.feature-sec .feature-content h4.subtitle-head:after {
+    position: absolute;
+    content: "";
+    width: 75%;
+    border: 2px solid #5ea50c;
+    border-right: 0px;
+    left: 0px;
+    height: 10px;
+    bottom: -12px;
+    border-left: 0px;
+}
+.feature-sec .feature-content h4.subtitle-head {
+    position: relative;
+}
+/*inner banner css end*/
 
 
 

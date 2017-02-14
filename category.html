@@ -22,19 +22,19 @@
          <script src="./js/lightslider.js"></script>
          <script type="text/javascript">
            $(document).ready(function() {
-          $("#content-slider").lightSlider({
+           $("#divide-slider").lightSlider({
                 gallery:true,
                 item:1,
-                thumbItem:3,
+                thumbItem:null,
                 slideMargin: 0,
                 speed:1200,
                 auto:true,
                 loop:true,
                 onSliderLoad: function() {
-                    $('#content-slider').removeClass('cS-hidden');
+                    $('#divide-slider').removeClass('cS-hidden');
                 }  
             });
-           $("#divide-slider").lightSlider({
+           $("#divide-slider-2").lightSlider({
                 gallery:true,
                 item:4,
                 thumbItem:null,
@@ -43,7 +43,7 @@
                 auto:true,
                 loop:true,
                 onSliderLoad: function() {
-                    $('#divide-slider').removeClass('cS-hidden');
+                    $('#divide-slider-2').removeClass('cS-hidden');
                 }  
             });
     });
@@ -137,108 +137,129 @@
   </header>
 
     <!-- content start-->
-  <div class="main-content index">
+  <div class="main-content inner">
   <!-- div class main content start-->
   <!--banner start-->
   <section id="banner">
-        <div class="col-md-12 no-gutter banner">
-           <div class="item">
-            <ul id="content-slider" class="content-slider">
-                <li>
-                <div class="slider-image">
-                  <img src="./img/slide-1.jpg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 banner">
+            <div class="col-sm-6 banner-content-box">
+                <h3 class="title-head"><span>Plant </span> Herbal</h3>
+                <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a class="button btn" href="#" role="button">Shop Now</a>
+            </div> 
+            <div class="col-sm-6 banner-image-box">
+                <div class="card-image">
+                  <div class="item">
+                   <ul id="divide-slider" class="divide-slider">
+                  <li>
+                  <img src="./img/slide-1.jpg" alt="">
+                  </li>
+                  <li>
+                  <img src="./img/slide-3.jpg" alt="">
+                  </li>
+                  <li>
+                  <img src="./img/slide-2.jpg" alt="">
+                  </li>
+                  <li>
+                  <img src="./img/slide-1.jpg" alt="">
+                  </li>
+                  </ul>
                 </div>
-                  <div class="slider-content">
-                    <div class="content">
-                    <h1>Plant For Healthy Family</h1>
-                    <p>Composer for healthy planet</p>
-                     <a class="button btn" href="#" role="button">Learn more &raquo;</a>
-                     </div>
-                  </div>
-                </li>
-                <li>
-                <div class="slider-image">
-                  <img src="./img/slide-3.jpg">
-                </div>
-                  <div class="slider-content">
-                     <div class="content">
-                    <h1>Plant For Healthy Family</h1>
-                    <p>Composer for healthy planet</p>
-                     <a class="button btn" href="#" role="button">Learn more &raquo;</a>
-                     </div>
-                  </div>
-                </li>
-                <li>
-                <div class="slider-image">
-                  <img src="./img/slide-2.jpg">
-                </div>
-                  <div class="slider-content">
-                   <div class="content">
-                    <h1>Plant For Healthy Family</h1>
-                    <p>Composer for healthy planet</p>
-                       <a class="button btn" href="#" role="button">Learn more &raquo;</a>
-                       </div>
-                  </div>
-                </li>
-            </ul>
-    </div>  
+            </div>    
+        </div>
+    </div>
     </div>
 </section>
 <div class="clearfix"></div>
 <!--banner end-->
  <!-- /container -->
-    <section class="scroll-first section-padding" id="about-sec">
+    <section class="scroll-first section-margin section-padding" id="about-sec">
       <div class="container">
           <div class="row about-sec">
               <div class="col-md-12 col-xs-12">
-                <div class="col-xs-6 content">
-                  <div class="image-box">
-                    <img src="./img/second-scroll.jpg" alt="">
-                  </div>
-                  <div class="content-box">
-                    <h3 class="title-head"><span>Plant </span>Interior</h3>
-                      <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                      <a class="button btn" href="#" role="button">Shop Now</a>
-                    </div>
+                  <div class="col-xs-6">
+                    <img src="./img/slide-1.jpg" alt="">
                   </div>
                   <div class="col-xs-6">
-                  <div class="col-xs-12 no-gutter">
-                    <div class="col-xs-6 image-half-box overlay-box">
-                        <img src="./img/srcond-scroll-1.jpg" alt="">
-                        <div class="hover-overlay">
-                          <h5 class="h4">Lorem ipsum</h5>
-                        </div>
+                  <div class="content-box">
+                    <h3 class="title-head"><span>About </span>category</h3>
+                      <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                      <a class="button btn" href="#" role="button">&raquo; Read more</a>
                     </div>
-                    <div class="col-xs-6 image-half-box overlay-box">
-                        <img src="./img/second-scroll-2.jpg" alt="">
-                        <div class="hover-overlay">
-                          <h5 class="h4">Lorem ipsum</h5>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 no-gutter padding-top-20">
-                      <div class="col-xs-12 overlay-box image-full-width">
-                        <img src="./img/second-scroll-2.jpg" alt="">
-                        <div class="hover-overlay width-95">
-                          <h5 class="h4">Lorem ipsum</h5>
-                        </div>
-                      </div>
-                  </div>
                   </div>
               </div>
             </div>
       </div>
     </section> 
+     <!--about green decor section-->
+    <section class="third-scroll section-margin" id="video-sec">
+      <div class="col-md-12 video-sec">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/bqGtrvcR5ls?rel=0&autoplay=1&loop=2" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+    <!--About green Decor section end-->
+    <div class="clearfix"></div>
+    <!--about green decor section-->
+    <section class="fourth-scroll feature-sec secondry-bg section-margin-50" id="feature-sec">
+    <div class="container">
+      <div class="row">
+      <div class="col-md-12 col-xs-12 feature-content">
+        <div class="col-xs-4 content-box">
+             <h3 class="title-head">Features</h3>
+             <h4 class="subtitle-head">Solution From the Green Decor</h4>
+              <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <a class="button btn" href="#" role="button">&raquo; Read more</a>
+        </div>
+        <div class="feature-box col-xs-8">
+          <div class="col-xs-12 no-gutter">
+          <div class="col-xs-4 no-gutter box">
+              <img src="./img/feautre-image.png" alt="">
+              <h4 class="subtitle">Green Decor</h4>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+          </div>
+          <div class="col-xs-4 no-gutter box">
+              <img src="./img/feautre-image.png" alt="">
+              <h4 class="subtitle">Green Decor</h4>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+          </div>
+          <div class="col-xs-4 no-gutter box">
+              <img src="./img/feautre-image.png" alt="">
+              <h4 class="subtitle">Green Decor</h4>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+          </div>
+          <div class="col-xs-4 no-gutter box">
+              <img src="./img/feautre-image.png" alt="">
+              <h4 class="subtitle">Green Decor</h4>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+          </div>
+          <div class="col-xs-4 no-gutter box">
+              <img src="./img/feautre-image.png" alt="">
+              <h4 class="subtitle">Green Decor</h4>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+          </div>
+          <div class="col-xs-4 no-gutter box">
+              <img src="./img/feautre-image.png" alt="">
+              <h4 class="subtitle">Green Decor</h4>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>      
+    </section>
+    <!--About green Decor section end-->
     <!--product section-->
-    <section id="product-sec" class="secondry-bg section-padding product-sec section-margin third-scroll">
+    <section id="product-sec-inner" class="section-padding product-sec section-margin fifth-scroll">
       <div class="container">
         <div class="row">
           <div class="col-md-12 section-title text-center">
-            <h3 class="title-head"><span>New </span>Product</h3>
+            <h3 class="title-head"><span>Browse </span>More Category</h3>
           </div>
             <div class="col-md-12">
             <div class="item">
-              <ul id="divide-slider" class="divide-slider">
+              <ul id="divide-slider-2" class="divide-slider">
               <li>
               <div class="card">
                 <div class="slider-image">
@@ -301,28 +322,13 @@
       </div>
     </section>
     <!--product section end-->
-    <!--about green decor section-->
-    <section class="fourth-scroll section-margin section-padding" id="why-sec">
-    <div class="container">
-      <div class="row">
-      <div class="col-md-12 section-tile text-center">
-      <h2 class="title-head">Why <span>Green Decor</span></h2>
-      </div>
-      <div class="col-md-12 col-xs-12 content">
-        <div class="col-xs-4 box">
-
-        </div>
-      </div>
-      </div>
-    </div>      
-    </section>
-    <!--About green Decor section end-->
+    
     <!--Testomanial section -->
     <section class="fifth-scroll secondry-bg section-margin testomanial section-padding" id="testomanial">
     <div class="container">
     <div class="row">
       <div class="col-md-12 section-tile">
-        <h3 class="title-head">Testomanial</h3>
+        <h3 class="title-head"><span>From </span> Green Decor Blog</h3>
       </div>
       <div class="col-md-12 section-content">
       <div class="col-xs-4 card">
