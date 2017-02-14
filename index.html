@@ -34,6 +34,18 @@
                     $('#content-slider').removeClass('cS-hidden');
                 }  
             });
+           $("#divide-slider").lightSlider({
+                gallery:true,
+                item:4,
+                thumbItem:0,
+                slideMargin: 0,
+                speed:1200,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#divide-slider').removeClass('cS-hidden');
+                }  
+            });
     });
          </script> 
     </head>
@@ -61,18 +73,49 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse col-sm-10">
             <div class="col-xs-12 menu">
-              <div class="col-sm-8">
+              <div class="col-sm-9">
                   <ul class="menu-1">
-                      <li class="dropdown"> Home</li>
-                      <li class="dropdown"> Home</li>
-                      <li class="dropdown"> Home</li>
-                      <li class="dropdown"> Home</li>
-                      <li class="dropdown"> Home</li>
-                      <li class="dropdown"> Home</li>
-                      <li class="dropdown"> Home</li>
+                      <li class="dropdown" ><a href="#!"> Home </a>
+                          
+                      </li>
+                     <li class="dropdown" ><a href="#!" data-toggle="dropdown"> Category <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                            <li>About Us</li>
+                            <li>About Us</li>
+                            <li>About Us</li>
+                          </ul
+                      </li>
+                      <li class="dropdown" ><a href="#!" data-toggle="dropdown">Collections <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                            <li>About Us</li>
+                            <li>About Us</li>
+                            <li>About Us</li>
+                          </ul
+                      </li>
+                     <li class="dropdown" ><a href="#!" data-toggle="dropdown">Feature <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                            <li>About Us</li>
+                            <li>About Us</li>
+                            <li>About Us</li>
+                          </ul
+                      </li>
+                      <li class="dropdown" ><a href="#!" data-toggle="dropdown">Blog <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                            <li>About Us</li> 
+                            <li>About Us</li>
+                            <li>About Us</li>
+                          </ul
+                      </li>
+                      <li class="dropdown" ><a href="#!" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                            <li>About Us</li>
+                            <li>About Us</li>
+                            <li>About Us</li>
+                          </ul
+                      </li>
                   </ul>
               </div>
-              <div class="col-sm-4 text-right">
+              <div class="col-sm-3 text-right">
                   <ul class="menu-1">
                      <li class="dropdown">
                       <i class="fa fa-search"></i>
@@ -144,7 +187,7 @@
 <div class="clearfix"></div>
 <!--banner end-->
  <!-- /container -->
-    <section class="scroll-first section-padding">
+    <section class="scroll-first section-padding" id="about-sec">
       <div class="container">
           <div class="row about-sec">
               <div class="col-md-12 col-xs-12">
@@ -176,7 +219,7 @@
                   <div class="col-xs-12 no-gutter padding-top-20">
                       <div class="col-xs-12 overlay-box image-full-width">
                         <img src="./img/second-scroll-2.jpg" alt="">
-                        <div class="hover-overlay">
+                        <div class="hover-overlay width-95">
                           <h5 class="h4">Lorem ipsum</h5>
                         </div>
                       </div>
@@ -186,10 +229,190 @@
             </div>
       </div>
     </section> 
+    <!--product section-->
+    <section id="product-sec" class="secondry-bg section-margin third-scroll">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 section-title text-center">
+            <h3 class="h1"><span>New </span>Product</h3>
+          </div>
+            <div class="col-md-12">
+            <div class="item">
+              <ul id="divide-slider" class="divide-slider">
+              <li class="card">
+                <div class="slider-image">
+                  <img src="./img/slide-3.jpg">
+                </div>
+                    <div class="content">
+                    <h6>Plant For Healthy Family</h6>
+                    <p>Composer for healthy planet</p>
+                    </div>
+                </li>
+                <li class="card">
+                <div class="slider-image">
+                  <img src="./img/slide-3.jpg">
+                </div>
+                    <div class="content">
+                    <h6>Plant For Healthy Family</h6>
+                    <p>Composer for healthy planet</p>
+                    </div>
+                </li>
+                <li class="card">
+                <div class="slider-image">
+                  <img src="./img/slide-3.jpg">
+                </div>
+                    <div class="content">
+                    <h6>Plant For Healthy Family</h6>
+                    <p>Composer for healthy planet</p>
+                    </div>
+                </li>
+                <li class="card">
+                <div class="slider-image">
+                  <img src="./img/slide-3.jpg">
+                </div>
+                    <div class="content">
+                    <h6>Plant For Healthy Family</h6>
+                    <p>Composer for healthy planet</p>
+                    </div>
+                </li>
+            </ul>
+    </div>  
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--product section end-->
+    <!--about green decor section-->
+    <section class="fourth-scroll section-margin section-padding" id="why-sec">
+    <div class="container">
+      <div class="row">
+      <div class="col-md-12 section-tile text-center">
+      <h2 class="h1">Why <span>Green Decor</span></h2>
+      </div>
+      <div class="col-md-12 col-xs-12 content">
+        <div class="col-xs-4 box">
+
+        </div>
+      </div>
+      </div>
+    </div>      
+    </section>
+    <!--About green Decor section end-->
+    <!--Testomanial section -->
+    <section class="fifth-scroll secondry-bg section-margin section-padding" id="testomanial">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-tile">
+        <h3 class="h1">Testomanial</h3>
+      </div>
+      <div class="col-md-12 section-content">
+      <div class="col-xs-4 card">
+          <div class="card-time">
+            <span class="day">oct</span>
+            <span class="date">22, </span>
+            <span class="year">2017</span>
+          </div>
+          <div class="card-image">
+              <img src="./img/slide-1.jpg" alt="">
+          </div>
+          <div class="card-content">
+              <a href="#" class="title">Articulated Seating With Wavy Style</a>
+              <p class="text">Get bored easily? Try a setup with a wide variety of furniture. Instead of two...</p>
+              <a href="#" class="read-more-btn">Read More</a>
+          </div>
+      </div>
+      </div>
+    </div>
+    </div>
+      
+    </section>
+    <!--Testomanial end-->
     <!--div main content end-->
     </div>
-    <footer>
+    <footer class="secondry-bg section-padding-50">
+      <div class="top-footer">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-sm-3 logo-footer text-center">
+                     <img src="./img/instragram.jpg" alt="">
+                    <p class="text">
+                      We are a creative company that specializes in strategy & design. We like to create things with like - minded people who are serious about their passions.
+                    </p>
+                </div>
+                <div class="col-sm-3 footer-venue">
+                    <h4 class="title-footer">Our Office</h4>  
+                    <div class="footer-box no-gutter col-xs-12">
+                    <div class="col-xs-2">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="col-xs-10">
+                        <p class="title">Address</p>
+                        <p class="text">Sector 4,Noida</p>
+                    </div>
+                    </div>
+                    <div class="footer-box no-gutter col-xs-12">
+                    <div class="col-xs-2">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="col-xs-10">
+                        <p class="title">Call Us</p>
+                        <p class="text">(123) 81111190</p>
+                        <p class="text">(123) 81111190</p>
+                    </div>
+                    </div>
+                    <div class="footer-box no-gutter col-xs-12">
+                    <div class="col-xs-2">
+                        <i class="fa fa-envelope-o"></i>
+                    </div>
+                    <div class="col-xs-10">
+                        <p class="title">Email Us</p>
+                        <p class="text">info@email.com</p>
+                    </div>
+                    </div>
+                </div>
+                 <div class="col-sm-3 News-letter">
+                    <h4 class="title-footer">News Letter</h4>  
+                    <div class="footer-box no-gutter col-xs-12">
+                        <p class="text">Subcribe to our newsletter to get more free tips. No Spam, Promise.</p>
+                    </div>
+                    <div class="footer-box no-gutter col-xs-12">
+                      <form>
+                        <input type="text" name="" placeholder="Email" class="input">
+                          <input type="submit" name="" class="button" placeholder="Subcribe">
+                      </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 instgram-footer">
+                    <h4 class="title-footer">Instrgarm</h4>  
+                    <div class="footer-box no-gutter col-xs-12">
+                      <div class="col-xs-4 image-footer">
+                        <img src="./img/instragram.jpg" alt="">
+                      </div>
+                      <div class="col-xs-4 image-footer">
+                        <img src="./img/instragram.jpg" alt="">
+                      </div>
+                      <div class="col-xs-4 image-footer">
+                        <img src="./img/instragram.jpg" alt="">
+                      </div>
+                      <div class="col-xs-4 image-footer">
+                        <img src="./img/instragram.jpg" alt="">
+                      </div>
+                      <div class="col-xs-4 image-footer">
+                        <img src="./img/instragram.jpg" alt="">
+                      </div>
+                      <div class="col-xs-4 image-footer">
+                        <img src="./img/instragram.jpg" alt="">
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+        <div class="footer-copyright">
         <p>GreenDecor &copy; CopyRight 2017</p>
+        </div>
       </footer>
   </div>
   </div>       
